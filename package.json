@@ -1,0 +1,31 @@
+{
+  "name": "js-range",
+  "version": "1.0.0",
+  "description": "A function to generate an array sequence of numbers from start to end.",
+  "main": "index.js",
+  "devDependencies": {
+    "array-equal": "^1.0.0",
+    "babel": "^5.1.11",
+    "mocha": "^2.2.4"
+  },
+  "scripts": {
+    "prepublish": "babel index.es6 > index.js",
+    "test": "mocha test.es6 -r babel/register",
+    "dev": "mocha test.es6 -r babel/register -w --watch-extensions es6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/roman01la/js-range.git"
+  },
+  "keywords": [
+    "javascript",
+    "js",
+    "range"
+  ],
+  "author": "Roman Liutikov <roman01la@romanliutikov.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/roman01la/js-range/issues"
+  },
+  "homepage": "https://github.com/roman01la/js-range"
+}
